@@ -1,39 +1,84 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
-    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Auth</title>
 </head>
-
 <body>
     <div class="container">
-        <header>
-                <h1>Sahar Shirmardi</h1>
-        </header>
-        <main>
-            <section id="1">
-                <h2>About me</h2>
-            </section>
-            <section id="2">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </section>
-            <section id="3">
-                <h1>Fun Facts</h1>
-            </section>
-        </main>
-        <footer>
-             <h1>Footer</h1>
-             <a href="https://github.com/sahar-shirmardi/">Github</a>
-             <a href="https://google.com">Google</a>
-             <a class="button bouncy" id="b1" href='https://www.google.com' target='__blank') Google
-        </footer>
+        <form action="#" autocomplete="off" >
+
+            <div class="form formOne" style="display: none;">
+                <header>
+                    <h1 class="head">Sign up</h1>
+                    <p>Contact Info</p>
+                </header>
+                <main>
+                    <div class="field">
+                        <p class="empty"></p>
+                        <p><label>Phone Number</label> </p>
+                        <input type="tel" placeholder="0912-123-4567" class="onlynum charlimit required">
+                        <p class="char-count"></p>
+                        <p class="error"></p>
+                    </div>
+                    <button class="next button" id="buttonOne">Next</button>
+                </main>
+            </div>
+            
+
+            <div class="form formTwo" style="display: none;">
+                <header>
+                    <h1 class="head">Sign up</h1>
+                    <p>Authenticate</p>
+                </header>
+                <main>
+                    <div class="field">
+                        <p><label>Enter the code that was sent to you</label></p>
+                        <input type="text" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="verify required">
+                         <p class="empty"></p>
+                        <p><small>wrong number? <a href="#">edit</a></small></p>
+                       
+                    </div>
+                    <button class="next button" id="buttonTwo">Next</button>
+                </main>
+
+            </div>
+
+            <div class="form formThree" style="display: none;">
+                <header>
+                    <h1 class="head">Sign up</h1>
+                    <p>Personal Info</p>
+                </header>
+                <main>
+                    <div class="field">
+                        <p class="empty"></p>
+                        <p><label>First Name</label></p>
+                        <input type="text" placeholder="John" class="required">
+                    </div>
+                    <div class="field">
+                        <p><label>Last Name</label></p>
+                        <input type="text" placeholder="Doe" class="required">
+                    </div>
+                    <div class="field">
+                        <p><label>Age</label></p>
+                        <input type="text" placeholder="20" class="onlynum required">
+                        <p class="error"></p>
+                        
+
+                    </div>
+                    <div class="field">
+                        <p><label>Email<small style="color: grey; font-weight: 100;margin: 0px;">(optional)</small></label></p>
+                        <input type="email" placeholder="abc@mail.com">
+
+                    </div>
+                    <button class="next button" id="buttonThree">Submit</button>
+                    <!--input class="submit button" type="submit" value="Submit" id="buttonThree"-->
+                </main>
+            </div>
+        </form>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
