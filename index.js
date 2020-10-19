@@ -15,7 +15,7 @@ $(document).ready(function(event){
 
     // Iterate on array whilst checking emptiness
     $(".button").click(function(){
-        if(isEmpty(curr) && isNum(curr) && isLimit(curr) && isEmail(curr) /*&& isVerify(curr,code)*/){
+        if(isEmpty(curr) && isNum(curr) && isLimit(curr) && isEmail(curr)){
             // if (not last form ){Go next}
             //else { Submit form }
             curr.slideUp(500);
