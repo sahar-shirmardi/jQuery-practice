@@ -1,24 +1,116 @@
-*{
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-header {
-    background-image: url("https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg");
-    min-height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+*,*:focus,*:hover{
+    outline:none;
 }
-
-main {
+body {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: pink;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height : 100%;
+    background: -webkit-linear-gradient(bottom,  #c71585 , #0250c5);
+}
+form .form {
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: snow;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+form .form main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0px;
 }
 
-section {
-    margin: 1em;
+form .form header {
+    padding: 20px;
+    background-color: mediumvioletred;
+    color:snow;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
 }
+
+form .field {
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+
+form .form input {
+    background-color: lavenderblush;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 30px;;
+}
+
+button {
+    width: 100px;
+    margin-left: auto;
+    background-color: mediumvioletred;
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color:#0250c5;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+    box-shadow: 0px 5px 5px #140470;
+    transform: translateY(-1px);
+}
+
+
+.error, .empty {
+    color:mediumvioletred;
+}
+
+form .field a, a::after {
+    text-decoration: none;
+    color: mediumvioletred;
+    padding: 3px;
+}
+form .field a:hover {
+    background-color: mediumvioletred;
+    color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.empty {
+    float: right;
+}
+
+
